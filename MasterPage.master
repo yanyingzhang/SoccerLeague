@@ -1,0 +1,56 @@
+﻿<!--
+    COMP228 Assignment - Centennial
+    Yanying Zhang - 300926213
+ -->
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+    
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Page</title>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="allPage"> 
+
+      <div id="banner">
+              
+          <asp:LoginView ID="LoginView" runat="server" SkinID="loginStyle" >
+             <LoggedInTemplate>
+                <asp:LoginName ID="LoginName" runat="server" FormatString="Hello, {0}!" ForeColor="LightCoral" />
+                (<asp:LoginStatus ID="LoginStatus" runat="server" /> )
+             </LoggedInTemplate>
+             <AnonymousTemplate>
+                <asp:LoginStatus ID="LoginStatus" runat="server" />
+             </AnonymousTemplate>
+            </asp:LoginView>
+          
+         
+          <asp:Image ID="bannerImage" runat="server" ImageUrl="img/MASLlogo.PNG" />
+          
+          <h1>Major Arena Soccer League</h1>
+          <asp:Image ID="movingImg" runat="server" ImageUrl="img/ball.gif" style="width:100px;float:right;margin-bottom:10px"/>
+          
+
+          <asp:SiteMapDataSource ID="sitemapDataSource" runat="server"  ShowStartingNode="False" />
+          <asp:Menu ID="myMenu" runat="server" Orientation="Horizontal" DataSourceID="sitemapDataSource">
+              <StaticMenuItemStyle  CssClass="menuItem"/> 
+              <StaticSelectedStyle ForeColor="LightCoral" />
+          </asp:Menu>       
+
+          
+       </div>
+            <asp:ContentPlaceHolder id="myContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+        <h6>&copy;Copyright - Yanying Zhang - 2018</h6>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿body {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../../img/dark.jpg');
+    position: center;
+    background-position: bottom;
+    background-attachment: fixed;
+    font-family: 'Times New Roman';
+    color: darkslategray;
+}
+
+#allPage {
+    background-color: gainsboro;
+    opacity: 0.8;
+    padding-left: 5px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#banner {
+    height: 180px;
+    margin-top: 0;
+}
+
+#myMenu {
+    height: 30px;
+    width: 100%;
+    font-size: large;
+    font-family: Berlin Sans FB;
+    text-align: center;
+    background-color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.menuItem {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    color: white;
+    margin-right: 50px;
+}
+
+#bannerImage {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+
+#movingImg {
+    width: 100px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+h1 {
+    color: darkcyan;
+    text-align: right;
+    margin-right: 80px;
+    font-family: Cooper Black;
+    font-size: 30px;
+    text-shadow: 12px 12px 2px darkgray;
+}
+
+h3 {
+    color: lightcoral;
+    font-family: Arial Black;
+}
+
+h6 {
+    color: darkcyan;
+    text-align: center;
+}
+
+#img1 {
+    height: 200px;
+    float: right;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.labelText {
+    color: palevioletred;
+}
+
+#LoginView {
+    margin-right: 0px;
+    text-align: right;
+    float: right;
+}
